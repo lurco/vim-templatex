@@ -8,10 +8,25 @@
 \usepackage{geometry}   % sets up page layout
 \geometry{verbose,a4paper,tmargin=1.5cm,bmargin=1.5cm,lmargin=1.5cm,rmargin=1.5cm}
 
-\usepackage[pdftex]{graphicx}
+\usepackage{graphicx}
 % extends the graphic package
 \usepackage[margin=10pt,font=small,labelfont=bf,labelsep=period]{caption}
 % package for custom figure and table captions
+
+% package for hyperlinks in the pdf file
+\usepackage[
+        colorlinks=true,
+        urlcolor=rltblue,       % \href{...}{...} external (URL)
+        filecolor=rltgreen,     % \href{...} local filecolor
+        linkcolor=rltred,       % \ref{...} and \pageref{...}
+        pdftitle={},
+        pdfauthor={},
+        pdfsubject={},
+        pdfproducer={},
+        pagebackref,
+        pdfpagemode=None,
+        bookmarksopen=true]{hyperref}
+
 \usepackage{float}
 % package for handling of floats (allow for creating new float types)
 \usepackage{subfig}
