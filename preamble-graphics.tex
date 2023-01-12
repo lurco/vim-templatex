@@ -1,0 +1,27 @@
+
+\usepackage{color}
+\definecolor{rltred}{rgb}{0.75,0,0}
+\definecolor{rltgreen}{rgb}{0,0.5,0}
+\definecolor{rltblue}{rgb}{0,0,0.75}
+
+\usepackage{thumbpdf}   % thumbnails for pdf
+\usepackage{geometry}   % sets up page layout
+\geometry{verbose,a4paper,tmargin=1.5cm,bmargin=1.5cm,lmargin=1.5cm,rmargin=1.5cm}
+
+\usepackage[pdftex]{graphicx}
+% extends the graphic package
+\usepackage[margin=10pt,font=small,labelfont=bf,labelsep=period]{caption}
+% package for custom figure and table captions
+\usepackage{float}
+% package for handling of floats (allow for creating new float types)
+\usepackage{subfig}
+% allows setting up figures in arrays
+\newenvironment{Figure}
+  {\par\medskip\noindent\minipage{\linewidth}}
+  {\endminipage\par\medskip}
+
+\usepackage{multicol}
+% multicolumn text support
+\usepackage{hhline}
+% more complex line specification for tabular evinronment
+

@@ -1,0 +1,13 @@
+
+\usepackage[MeX,plmath]{polski} % pakiet polskiej typografii i znaków
+
+% Komenda wstawiająca kropki po numerach sekcji, podsekcji etc.
+% (zgodnie z polskimi obyczajami typograficznymi)
+
+\makeatletter
+\renewcommand\@seccntformat[1]{\csname the#1\endcsname.\quad}
+\renewcommand\numberline[1]{#1.\hskip0.7em}
+\makeatother
+
+%\usepackage{indentfirst}        % paczka do polskich akapitów
+
