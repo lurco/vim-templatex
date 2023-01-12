@@ -1,0 +1,38 @@
+global !p
+def complete(t, opts):
+        if t:
+                opts = [ m[len(t):] for m in opts if m.startswith(t) ]
+        if len(opts) == 1:
+                return opts[0]
+        return "(" + '|'.join(opts) + ')'
+endglobal
+
+snippet preamble-head "Preamble head" b
+`cat $HOME/.vim/bundle/vim-templatex/preamble.tex`
+endsnippet
+
+snippet xelatex-preamble "XeLaTeX preamble" b
+`cat $HOME/.vim/bundle/vim-templatex/xelatex-preamble.tex`
+endsnippet
+
+snippet pdflatex-preamble "pdfLaTeX preamble" b
+`cat $HOME/.vim/bundle/vim-templatex/pdflatex-preamble.tex`
+endsnippet
+
+
+snippet preamble-graphics "Graphics preamble" b
+`cat $HOME/.vim/bundle/vim-templatex/preamble-graphics.tex`
+endsnippet
+
+snippet preamble-math "Math preamble" b
+`cat $HOME/.vim/bundle/vim-templatex/preamble-math.tex`
+endsnippet
+
+snippet polski-preamble "Polski preamble" b
+`cat $HOME/.vim/bundle/vim-templatex/polish-preamble.tex`
+endsnippet
+
+snippet preamble-pagestyles "Preamble pagestyles" b
+`cat $HOME/.vim/bundle/vim-templatex/preamble-pagestyles.tex`
+endsnippet
+
